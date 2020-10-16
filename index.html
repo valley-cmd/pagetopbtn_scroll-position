@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body style="height:5000px;">
+<p style="position:fixed; top:10px;">Scroll Top : <span id="pixcel"></span></p>
+
+<script src="jquery-3.5.1.min.js"></script>
+<script>
+  $(window).scroll(function() {
+    $("#pixcel").text($(this).scrollTop());
+  });
+</script>
+<!-- 
+
+	<script src="test.js"></script> -->
+</body>
+</html>
